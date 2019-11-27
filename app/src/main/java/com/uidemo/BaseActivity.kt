@@ -11,10 +11,10 @@ import com.uidemo.constants.Constants
 import com.uidemo.navigation.Navigator
 
 
-abstract class BaseActivity : AppCompatActivity() {
+ open class BaseActivity : AppCompatActivity() {
 
-     var actType : Int = 0;
-    var navigator = Navigator()
+     private var actType : Int = 0;
+    private var navigator = Navigator()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
