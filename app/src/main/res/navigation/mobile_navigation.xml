@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_accounts">
+
+    <fragment
+        android:id="@+id/nav_accounts"
+        android:name="com.uidemo.ui.fragment.AccountFragment"
+        android:label="@string/menu_account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/nav_transfer"
+        android:name="com.uidemo.ui.fragment.TransferDepositPayFragment"
+        android:label="@string/menu_transfer"
+        tools:layout="@layout/fragment_transfer" />
+
+    <fragment
+        android:id="@+id/nav_explore"
+        android:name="com.uidemo.ui.fragment.ExploreProductsFragment"
+        android:label="@string/menu_explore"
+        tools:layout="@layout/fragment_explore" />
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.uidemo.ui.fragment.LoginPreferenceFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login_prfs" />
+
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.uidemo.ui.fragment.NotificationFragment"
+        android:label="@string/menu_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/nav_manage"
+        android:name="com.uidemo.ui.fragment.ManageCardsFragment"
+        android:label="@string/menu_manage_cards"
+        tools:layout="@layout/fragment_manage_cards" />
+
+    <fragment
+        android:id="@+id/nav_statement"
+        android:name="com.uidemo.ui.fragment.StatementCardsFragment"
+        android:label="@string/menu_statement"
+        tools:layout="@layout/fragment_statement" />
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.uidemo.ui.fragment.HelpServicesFragment"
+        android:label="@string/menu_help"
+        tools:layout="@layout/fragment_help" />
+
+</navigation>

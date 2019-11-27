@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/LayoutHeight_Wrap"
+    android:background="@color/DarkGray">
+
+    <LinearLayout
+        style="@style/LayoutHeight_Wrap"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:orientation="vertical"
+        android:padding="@dimen/_5dp"
+        android:background="@drawable/ic_rounded_corners_white"
+        >
+    <Button
+        android:id="@+id/btnForgetPassword"
+        android:minHeight="@dimen/_50dp"
+        style="@style/LayoutHeight_Wrap"
+        android:text="@string/forgot_username"
+        android:textAllCaps="false"
+        android:textColor="@color/DarkBlue"
+        android:background="@color/White"></Button>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/DarkGray"></View>
+    <Button
+        android:id="@+id/btnResetPassword"
+        android:minHeight="@dimen/_50dp"
+        style="@style/LayoutHeight_Wrap"
+        android:text="@string/reset_password"
+        android:textAllCaps="false"
+        android:textColor="@color/DarkBlue"
+        android:background="@color/White"></Button>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_margin="@dimen/_10dp"
+        android:minHeight="@dimen/_50dp"
+        style="@style/LayoutHeight_Wrap"
+        android:textColor="@color/DarkBlue"
+        android:textStyle="bold"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:background="@drawable/ic_rounded_corners_white" />
+
+
+
+</LinearLayout>

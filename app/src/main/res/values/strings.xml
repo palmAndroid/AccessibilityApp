@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">AccessibilityApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+<!-- Navigation Menu Strings-->
+    <string name="menu_account">View Accounts</string>
+    <string name="menu_transfer">Transfer , Deposit &amp; Pay</string>
+    <string name="menu_explore">Explore Products &amp; offers</string>
+    <string name="menu_login">Login Preferences</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="menu_manage_cards">Manage Cards</string>
+    <string name="menu_statement">Statement &amp; Docs</string>
+    <string name="menu_help">Help &amp; Services</string>
+
+
+    <!--Login Screen Strings -->
+    <string name="hello">Hello!</string>
+    <string name="glad_u_r_here">Glad you\'re here</string>
+    <string name="enter_username">Please Enter your username</string>
+    <string name="enter_password">Please Enter your password</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="rememberme">  Remember Me</string>
+    <string name="login_help">Login Help</string>
+    <string name="login">Log In</string>
+    <string name="create_a_username_and_password">Create a Username and Password</string>
+    <string name="not_a_u_s_bank_customer">Not a U.S. Bank customer?</string>
+    <string name="explore_loans_cards_more"><![CDATA[Explore loans, cards & more]]></string>
+    <string name="tour_the_app">Tour the app</string>
+    <string name="help_icon">Tap here for Help</string>
+    <string name="forgot_username">Forgot username?</string>
+    <string name="reset_password">Reset Password?</string>
+    <string name="cancel">Cancel</string>
+    <string name="enable_it_to_remember_me">Enable it to Remember Me!</string>
+    <string name="view_accounts">View Accounts</string>
+    <string name="transfer_deposit_pay"><![CDATA[Transfer, deposit & pay]]></string>
+    <string name="explore_products_offers"><![CDATA[Explore products & offers]]></string>
+    <string name="login_preference">Login Preference</string>
+    <string name="notifications">Notifications</string>
+    <string name="manage_cards">Manage Cards</string>
+    <string name="statement_docs"><![CDATA[Statement & Docs]]></string>
+    <string name="help_services"><![CDATA[Help & Services]]></string>
+</resources>
