@@ -2,11 +2,7 @@
 
 import android.os.Bundle
 import android.view.Menu
-
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.navigateUp
-import com.uidemo.R
 import com.uidemo.constants.Constants
 import com.uidemo.navigation.Navigator
 
