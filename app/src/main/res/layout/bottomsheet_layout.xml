@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    style="@style/LayoutFullScreen"
+    android:background="@drawable/ic_rounded_corners_gray"
+    app:behavior_peekHeight="@dimen/_50dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+        <View
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="@dimen/_3dp"
+            android:background="@color/Black"
+            android:layout_margin="@dimen/_8dp"
+            android:layout_gravity="center_horizontal"></View>
+
+
+        <TextView
+            style="@style/TextSmallStyle"
+            android:textColor="@color/Black"
+            android:text="@string/insight_updates"
+            android:layout_marginTop="@dimen/_10dp"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/list"
+            style="@style/LayoutHeight_Wrap" />
+
+
+
+</LinearLayout>

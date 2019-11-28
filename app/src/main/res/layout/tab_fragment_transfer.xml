@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkBlue">
+
+
+    <TextView
+        android:id="@+id/text_title_transfer_layout"
+        android:text="@string/glad_u_r_here"
+        style="@style/TextSmallStyle"
+        android:contentDescription="@string/glad_u_r_here"
+        android:textColor="@color/White"
+        android:layout_margin="@dimen/_5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_sub_title_transfer_layout"
+        style="@style/LayoutWrap"
+        android:layout_margin="@dimen/_5dp"
+        android:text="@string/welcome_back"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_22sp"
+        android:textStyle="bold"
+        android:contentDescription="@string/welcome_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_transfer_layout"
+
+        />
+
+    <TextView
+        android:id="@+id/text_1_transfer_layout"
+        android:text="@string/this_is_account_activity"
+        style="@style/TextSmallStyle"
+        android:contentDescription="@string/this_is_account_activity"
+        android:textColor="@color/White"
+        android:layout_margin="@dimen/_5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_sub_title_transfer_layout"
+        />
+
+    <View
+        android:id="@+id/line1_transfer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/White"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_1_transfer_layout"></View>
+
+    <TextView
+        android:id="@+id/text_2_transfer_layout"
+        android:text="@string/menu_account"
+        style="@style/TextSmallStyle"
+        android:contentDescription="@string/menu_account"
+        android:textColor="@color/White"
+        android:layout_margin="@dimen/_5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line1_transfer_layout"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_2_transfer_layout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

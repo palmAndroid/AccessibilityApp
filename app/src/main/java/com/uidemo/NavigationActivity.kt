@@ -1,9 +1,9 @@
 package com.uidemo
 
+import BaseActivity
 import android.os.Bundle
 
 import androidx.appcompat.widget.Toolbar
-import com.midnight_crm.ui.activity.BaseActivity
 import com.uidemo.constants.Constants
 
 class NavigationActivity : BaseActivity() {
@@ -14,7 +14,6 @@ class NavigationActivity : BaseActivity() {
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
         setActivityType(Constants().NAVIGATION_TYPE)
-
     }
 
 }

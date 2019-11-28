@@ -10,12 +10,17 @@ import com.uidemo.navigation.Navigator
  open class BaseActivity : AppCompatActivity() {
 
      private var actType : Int = 0;
-    private var navigator = Navigator()
+     private var navigator = Navigator()
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
+
+     fun setHeaderTitle(title : String){
+         supportActionBar?.title = title
+     }
 
     fun setActivityType(type : Int) {
         actType = type

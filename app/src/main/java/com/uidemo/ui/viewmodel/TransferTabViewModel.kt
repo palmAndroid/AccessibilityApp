@@ -4,10 +4,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class AccountViewModel : ViewModel() {
+class TransferTabViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is Account Fragment"
+        value = "This is Transfer Tab Fragment"
     }
     val text: LiveData<String> = _text
 
@@ -15,10 +15,10 @@ class AccountViewModel : ViewModel() {
 
         var list : ArrayList<String> = ArrayList()
         list.add("Account Activity")
-        list.add(" Reminder")
+        list.add("Gentle Reminder")
         list.add("Notifications")
-        list.add(" Activity")
-        list.add("Gentle ")
+        list.add("Account Activity")
+        list.add("Gentle Reminder")
         list.add("Notifications")
         list.add("Account Activity")
         value = list

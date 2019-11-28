@@ -1,11 +1,11 @@
 package com.uidemo
 
+import BaseActivity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import com.midnight_crm.ui.activity.BaseActivity
 import com.uidemo.alert.AlertDialogView
 
 class MainActivity : BaseActivity() {

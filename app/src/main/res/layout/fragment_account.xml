@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutFullScreen">
 
-</LinearLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        style="@style/LayoutFullScreen"
+        android:layout_above="@+id/tabs"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            style="@style/LayoutHeight_Wrap"
+            android:layout_above="@+id/tabs"
+            android:background="@color/White" />
+
+        <include layout="@layout/bottomsheet_layout"></include>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        style="@style/LayoutHeight_Wrap"
+        app:tabGravity="fill"
+        android:layout_gravity="bottom"
+        app:tabIndicatorColor="@color/DarkBlue"
+        app:tabSelectedTextColor="@color/DarkBlue"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@color/Black"
+        app:tabIndicatorHeight="@dimen/_5dp"
+        android:background="@color/White"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
