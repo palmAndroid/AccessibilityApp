@@ -5,7 +5,7 @@
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">App Settings</string>
 
 
 
@@ -70,4 +70,18 @@
     <string name="this_is_account_activity">This is account activity</string>
     <string name="you_have_1_upcoming_payment">you have 1 upcoming payment</string>
     <string name="welcome_back">Welcome back!</string>
+
+
+    <!--Help -->
+    <string name="search_help_topics">Search Help Topics</string>
+    <string name="get_more_information_about">Get more information about :</string>
+    <string name="how_do_i_send_money_to_a_person">How do I send money to a person?</string>
+    <string name="how_do_i_check_my_messages">How do I check my messages?</string>
+    <string name="how_can_i_increase_security_onmy_smartphone_or_tablet">How can I increase security onmy smartphone or tablet?</string>
+    <string name="guided_help">Guided Help</string>
+    <string name="get_help_sending_money">Get help sending money</string>
+    <string name="cobrowise">Cobrowise</string>
+    <string name="app_version_">App Version: 3.0.1</string>
+    <string name="help">Help</string>
+
 </resources>

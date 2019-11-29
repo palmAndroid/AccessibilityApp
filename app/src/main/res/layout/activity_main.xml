@@ -13,7 +13,7 @@
 
 
     <ImageButton
-        android:id="@+id/imageView"
+        android:id="@+id/image_help"
         android:layout_width="@dimen/_50dp"
         android:layout_height="@dimen/_50dp"
         android:layout_margin="@dimen/_10dp"

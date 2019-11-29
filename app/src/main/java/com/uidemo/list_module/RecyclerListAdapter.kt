@@ -26,7 +26,8 @@ class RecyclerListAdapter(val items: ArrayList<String>, val context: Activity?) 
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder?.tvTitle?.text = items.get(position)
+        holder.tvTitle?.text = items.get(position)
+        holder.tvTitle?.contentDescription = items.get(position)
     }
 }
 

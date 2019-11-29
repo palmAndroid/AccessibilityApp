@@ -4,7 +4,9 @@
     android:layout_height="wrap_content"
     android:background="@drawable/ic_rounded_corners_white"
     android:layout_margin="@dimen/_8dp"
-    android:padding="@dimen/_8dp">
+    android:padding="@dimen/_8dp"
+    android:focusable="true"
+    android:importantForAccessibility="yes">
 
 
     <TextView
@@ -15,6 +17,7 @@
         android:textColor="@color/Black"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
+        android:focusable="true"
         android:layout_margin="@dimen/_5dp"/>
 
 
@@ -24,7 +27,8 @@
         android:text="@string/you_have_1_upcoming_payment"
         android:contentDescription="@string/you_have_1_upcoming_payment"
         android:layout_below="@+id/text_title_listitem"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:focusable="true"/>
 
 
 </RelativeLayout>

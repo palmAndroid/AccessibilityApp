@@ -1,8 +1,13 @@
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
+import android.view.accessibility.AccessibilityEvent
 import androidx.appcompat.app.AppCompatActivity
+import com.uidemo.HelpActivity
+import com.uidemo.R
 import com.uidemo.constants.Constants
 import com.uidemo.navigation.Navigator
 
@@ -34,14 +39,12 @@ import com.uidemo.navigation.Navigator
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-       when (actType){
-           Constants().NAVIGATION_TYPE -> {
-               navigator.onCreateOptionsMenu(menu)
-           }
-       }
-        return true
-    }
+     override fun onCreateOptionsMenu(menu: Menu): Boolean {
+         when (actType) {
+             Constants().NAVIGATION_TYPE ->    this.menuInflater.inflate(R.menu.main, menu)
+         }
+         return super.onCreateOptionsMenu(menu)
+     }
 
     override fun onSupportNavigateUp(): Boolean {
         when (actType){
@@ -53,5 +56,15 @@ import com.uidemo.navigation.Navigator
         return false
     }
 
-
+     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+         if (actType==Constants().NAVIGATION_TYPE){
+             when(item.itemId){
+                 R.id.action_settings -> {
+                     val intent = Intent(this, HelpActivity::class.java)
+                     startActivity(intent)
+                 }
+             }
+         }
+         return super.onOptionsItemSelected(item)
+     }
 }

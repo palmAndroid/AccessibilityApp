@@ -14,13 +14,13 @@ class AccountViewModel : ViewModel() {
     private val list_items: MutableLiveData<ArrayList<String>> = MutableLiveData<ArrayList<String>>().apply {
 
         var list : ArrayList<String> = ArrayList()
-        list.add("Account Activity")
-        list.add(" Reminder")
-        list.add("Notifications")
-        list.add(" Activity")
-        list.add("Gentle ")
-        list.add("Notifications")
-        list.add("Account Activity")
+        list.add("Bottom Activity ")
+        list.add("Bottom Reminder")
+        list.add("Bottom Notifications")
+        list.add("Bottom Shop ")
+        list.add("Bottom Sale")
+        list.add("Bottom Deposit")
+
         value = list
     }
 

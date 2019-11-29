@@ -6,28 +6,42 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_accounts"
-            android:title="@string/view_accounts" />
+            android:contentDescription="@string/view_accounts"
+            android:title="@string/view_accounts"
+            />
         <item
             android:id="@+id/nav_transfer"
+            android:contentDescription="@string/transfer_deposit_pay"
             android:title="@string/transfer_deposit_pay" />
         <item
             android:id="@+id/nav_explore"
+            android:contentDescription="@string/explore_products_offers"
             android:title="@string/explore_products_offers" />
         <item
             android:id="@+id/nav_login"
-           android:title="@string/login_preference" />
+            android:contentDescription="@string/login_preference"
+           android:title="@string/login_preference"
+          />
         <item
             android:id="@+id/nav_notifications"
-            android:title="@string/notifications" />
+            android:contentDescription="@string/notifications"
+            android:title="@string/notifications"
+            />
         <item
             android:id="@+id/nav_manage"
-            android:title="@string/manage_cards" />
+            android:contentDescription="@string/manage_cards"
+            android:title="@string/manage_cards"
+           />
         <item
             android:id="@+id/nav_statement"
-            android:title="@string/statement_docs" />
+            android:contentDescription="@string/statement_docs"
+            android:title="@string/statement_docs"
+           />
         <item
             android:id="@+id/nav_help"
-            android:title="@string/help_services" />
+            android:contentDescription="@string/help_services"
+            android:title="@string/help_services"
+            />
 
     </group>
 

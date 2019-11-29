@@ -10,10 +10,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/nav_header_desc"
+        style="@style/LayoutWrap"
+        android:minHeight="@dimen/_50dp"
+        android:minWidth="@dimen/_50dp"
+        android:contentDescription="@string/action_settings"
+        android:background="@color/transparent"
         app:srcCompat="@drawable/ic_menu_manage"
+        android:padding="@dimen/_8dp"
         android:layout_alignParentRight="true"/>
 
     <TextView
@@ -31,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:textColor="@color/Black"
-        android:text="Last Login : 18 Nov 2019 at 02:30pm"
+        android:text="Last Login : 18 Nov 2019"
         android:layout_below="@+id/text_name_navlayout"/>
 
     <View

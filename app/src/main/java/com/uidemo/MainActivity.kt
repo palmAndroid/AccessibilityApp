@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import com.uidemo.alert.AlertDialogView
 
@@ -18,18 +19,19 @@ class MainActivity : BaseActivity() {
 
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
 
-        var btnLoginHelp = findViewById<TextView>(R.id.text_login_help)
-
-        btnLoginHelp.setOnClickListener {
+         findViewById<TextView>(R.id.text_login_help).setOnClickListener {
             AlertDialogView(this).showCustomDialog()
         }
 
-        var btnLogin = findViewById<Button>(R.id.buttonLogin)
-
-        btnLogin.setOnClickListener{
+         findViewById<Button>(R.id.buttonLogin).setOnClickListener {
             val intent = Intent(this, NavigationActivity::class.java)
             startActivity(intent)
         }
+
+        findViewById<ImageButton>(R.id.image_help).setOnClickListener {
+        val intent = Intent(this, HelpActivity::class.java)
+        startActivity(intent)
+    }
     }
 
 

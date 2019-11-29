@@ -20,6 +20,9 @@
         </activity>
         <activity android:name=".NavigationActivity"
             android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".HelpActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

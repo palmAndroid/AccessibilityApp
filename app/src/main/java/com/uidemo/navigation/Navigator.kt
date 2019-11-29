@@ -1,7 +1,5 @@
 package com.uidemo.navigation
 
-import android.app.AppComponentFactory
-import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
@@ -16,10 +14,11 @@ class Navigator{
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var activity : AppCompatActivity
+    private lateinit var drawerLayout :  DrawerLayout
 
      fun initialSetUp(activity: AppCompatActivity): AppBarConfiguration {
          this.activity = activity
-         val drawerLayout: DrawerLayout = activity.findViewById(R.id.drawer_layout)
+          drawerLayout = activity.findViewById(R.id.drawer_layout)
          val navView: NavigationView = activity.findViewById(R.id.nav_view)
          val navController = activity.findNavController(R.id.nav_host_fragment)
 
@@ -32,20 +31,12 @@ class Navigator{
          )
          activity.setupActionBarWithNavController(navController, appBarConfiguration)
          navView.setupWithNavController(navController)
-
          return appBarConfiguration
-    }
-
-     fun onCreateOptionsMenu(menu: Menu): Boolean {
-       activity.menuInflater.inflate(R.menu.main, menu)
-        return true
     }
 
      fun onSupportNavigateUp(): Boolean {
         val navController = activity.findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || onSupportNavigateUp()
     }
-
-
-
 }
+
