@@ -12,7 +12,7 @@
         style="@style/LayoutWrap"
         android:gravity="center_horizontal"
         android:text="@string/help"
-        android:textColor="@color/Black"
+        android:textColor="@color/black"
         android:textSize="@dimen/_22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,8 +27,8 @@
     <EditText
         android:id="@+id/searchET"
         style="@style/LayoutHeight_Wrap"
-        android:textColorHint="@color/Black"
-        android:textColor="@color/Black"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
         android:layout_marginLeft="@dimen/_10dp"
         android:layout_marginTop="@dimen/_20dp"
         android:layout_marginRight="@dimen/_10dp"
@@ -46,7 +46,7 @@
         android:textSize="@dimen/_18sp"
         android:gravity="center_vertical"
         android:text="@string/get_more_information_about"
-        android:textColor="@color/DarkBlue"
+        android:textColor="@color/dark_blue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchET" />
 
@@ -54,7 +54,7 @@
         android:id="@+id/sendTV"
         style="@style/TextSmallStyle"
         android:text="@string/how_do_i_send_money_to_a_person"
-        android:textColor="@color/Blue"
+        android:textColor="@color/blue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/infoTV" />
 
@@ -62,7 +62,7 @@
         android:id="@+id/checkTV"
         style="@style/TextSmallStyle"
         android:text="@string/how_do_i_check_my_messages"
-        android:textColor="@color/Blue"
+        android:textColor="@color/blue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sendTV" />
 
@@ -70,7 +70,7 @@
         android:id="@+id/securityTV"
         style="@style/TextSmallStyle"
         android:text="@string/how_can_i_increase_security_onmy_smartphone_or_tablet"
-        android:textColor="@color/Blue"
+        android:textColor="@color/blue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkTV" />
 
@@ -78,7 +78,7 @@
         android:id="@+id/viewVW"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        android:background="@color/Gray"
+        android:background="@color/gray"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/securityTV" />
 
@@ -89,7 +89,7 @@
         android:layout_marginTop="@dimen/_15dp"
         android:gravity="center_vertical"
         android:text="@string/guided_help"
-        android:textColor="@color/DarkBlue"
+        android:textColor="@color/dark_blue"
         android:textSize="@dimen/_22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewVW" />
@@ -99,7 +99,7 @@
         style="@style/TextSmallStyle"
         android:layout_marginTop="@dimen/_20dp"
         android:text="@string/get_help_sending_money"
-        android:textColor="@color/Blue"
+        android:textColor="@color/blue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/helpTV" />
 
@@ -107,7 +107,7 @@
         android:id="@+id/requestingTV"
         style="@style/TextSmallStyle"
         android:text="@string/how_do_i_send_money_to_a_person"
-        android:textColor="@color/Blue"
+        android:textColor="@color/blue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sendingTV" />
 
@@ -115,7 +115,7 @@
         android:id="@+id/splittingTV"
         style="@style/TextSmallStyle"
         android:text="@string/how_do_i_send_money_to_a_person"
-        android:textColor="@color/Blue"
+        android:textColor="@color/blue"
         android:textSize="@dimen/_12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/requestingTV" />
@@ -123,14 +123,14 @@
     <TextView
         style="@style/LayoutWrap"
         android:text="@string/cobrowise"
-        android:textColor="@color/Gray"
+        android:textColor="@color/gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         style="@style/LayoutWrap"
         android:text="@string/app_version_"
-        android:textColor="@color/Blue"
+        android:textColor="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

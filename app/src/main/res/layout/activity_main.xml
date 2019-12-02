@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/LayoutFullScreen"
     android:fillViewport="true"
-    android:background="@color/White"
+    android:background="@color/white"
     >
 <androidx.constraintlayout.widget.ConstraintLayout
     style="@style/LayoutFullScreen"
-    android:background="@color/White"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
 
@@ -31,7 +31,7 @@
         style="@style/LayoutWrap"
         android:layout_margin="@dimen/_10dp"
         android:text="@string/hello"
-        android:textColor="@color/DarkBlue"
+        android:textColor="@color/dark_blue"
         android:textSize="@dimen/_36sp"
         android:textStyle="bold"
         android:contentDescription="@string/hello"
@@ -101,7 +101,7 @@
         android:id="@+id/text_login_help"
         style="@style/TextSmallStyle"
         android:text="@string/login_help"
-        android:textColor="@color/Black"
+        android:textColor="@color/black"
         android:layout_alignParentRight="true"
         android:contentDescription="@string/login_help"
         />
@@ -110,7 +110,7 @@
         style="@style/TextSmallStyle"
         android:layoutDirection="rtl"
         android:text="@string/rememberme"
-        android:textColor="@color/Black"
+        android:textColor="@color/black"
         android:layout_alignParentLeft="true"
         android:contentDescription="@string/enable_it_to_remember_me"
         />
@@ -124,7 +124,7 @@
         style="@style/TextSmallStyle"
         android:layout_margin="@dimen/_15dp"
         android:text="@string/create_a_username_and_password"
-        android:textColor="@color/DarkBlue"
+        android:textColor="@color/dark_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
@@ -146,7 +146,7 @@
         android:layout_margin="@dimen/_8dp"
         android:gravity="top"
         android:text="@string/explore_loans_cards_more"
-        android:textColor="@color/DarkBlue"
+        android:textColor="@color/dark_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_not_a_customer" />
@@ -156,7 +156,7 @@
         android:id="@+id/text_tour"
         style="@style/TextSmallStyle"
         android:text="@string/tour_the_app"
-        android:textColor="@color/DarkBlue"
+        android:textColor="@color/dark_blue"
         android:layout_marginTop="@dimen/_50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

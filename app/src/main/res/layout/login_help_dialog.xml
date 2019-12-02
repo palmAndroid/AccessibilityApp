@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     style="@style/LayoutHeight_Wrap"
-    android:background="@color/DarkGray">
+    android:background="@color/dark_gray">
 
     <LinearLayout
         style="@style/LayoutHeight_Wrap"
@@ -19,21 +19,21 @@
         style="@style/LayoutHeight_Wrap"
         android:text="@string/forgot_username"
         android:textAllCaps="false"
-        android:textColor="@color/DarkBlue"
-        android:background="@color/White"></Button>
+        android:textColor="@color/dark_blue"
+        android:background="@color/white"></Button>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:background="@color/DarkGray"></View>
+            android:background="@color/dark_gray"></View>
     <Button
         android:id="@+id/btnResetPassword"
         android:minHeight="@dimen/_50dp"
         style="@style/LayoutHeight_Wrap"
         android:text="@string/reset_password"
         android:textAllCaps="false"
-        android:textColor="@color/DarkBlue"
-        android:background="@color/White"></Button>
+        android:textColor="@color/dark_blue"
+        android:background="@color/white"></Button>
     </LinearLayout>
 
     <Button
@@ -41,7 +41,7 @@
         android:layout_margin="@dimen/_10dp"
         android:minHeight="@dimen/_50dp"
         style="@style/LayoutHeight_Wrap"
-        android:textColor="@color/DarkBlue"
+        android:textColor="@color/dark_blue"
         android:textStyle="bold"
         android:text="@string/cancel"
         android:textAllCaps="false"

@@ -13,7 +13,7 @@
             android:id="@+id/viewpager"
             style="@style/LayoutHeight_Wrap"
             android:layout_above="@+id/tabs"
-            android:background="@color/White" />
+            android:background="@color/white" />
 
         <include layout="@layout/bottomsheet_layout"></include>
 
@@ -25,12 +25,12 @@
         style="@style/LayoutHeight_Wrap"
         app:tabGravity="fill"
         android:layout_gravity="bottom"
-        app:tabIndicatorColor="@color/DarkBlue"
-        app:tabSelectedTextColor="@color/DarkBlue"
+        app:tabIndicatorColor="@color/dark_blue"
+        app:tabSelectedTextColor="@color/dark_blue"
         app:tabTextAppearance="@style/TabLayoutTextStyle"
-        app:tabTextColor="@color/Black"
+        app:tabTextColor="@color/black"
         app:tabIndicatorHeight="@dimen/_5dp"
-        android:background="@color/White"
+        android:background="@color/white"
         android:layout_alignParentBottom="true"
         />
 </RelativeLayout>

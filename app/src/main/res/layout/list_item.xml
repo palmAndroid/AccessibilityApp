@@ -14,7 +14,7 @@
         android:text="@string/this_is_account_activity"
         style="@style/TextSmallStyle"
         android:contentDescription="@string/this_is_account_activity"
-        android:textColor="@color/Black"
+        android:textColor="@color/black"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:focusable="true"
