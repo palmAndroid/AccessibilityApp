@@ -22,6 +22,7 @@ import com.uidemo.list_module.RecyclerList
 class AccountFragment  : Fragment() {
 
     private lateinit var accountViewModel: AccountViewModel
+    private lateinit var bottomSheetBehavior : BottomSheetBehavior<View>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,7 +35,11 @@ class AccountFragment  : Fragment() {
         var topLL=root.findViewById<LinearLayout>(R.id.topLL)
         var text_title_bottom_sheet=root.findViewById<TextView>(R.id.text_title_bottom_sheet)
 
-        var bottomSheetBehavior = BottomSheetBehavior.from(topLL)
+         bottomSheetBehavior = BottomSheetBehavior.from(topLL)
+
+        if (bottomSheetBehavior.getState() != BottomSheetBehavior.STATE_EXPANDED) {
+            bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+        }
 
         bottomSheetBehavior.setBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
             override fun onStateChanged(bottomSheet: View, newState: Int) {
@@ -45,7 +50,7 @@ class AccountFragment  : Fragment() {
                     BottomSheetBehavior.STATE_EXPANDED -> {
 
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                            text_title_bottom_sheet.announceForAccessibility("Bottom Sheet Opened")
+                            text_title_bottom_sheet.announceForAccessibility("Bottom Sheet Opened !slide down with two fingers to close!")
                             text_title_bottom_sheet.isFocusable = true
                             text_title_bottom_sheet.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_YES
 
@@ -53,6 +58,12 @@ class AccountFragment  : Fragment() {
 
                     }
                     BottomSheetBehavior.STATE_COLLAPSED -> {
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                            text_title_bottom_sheet.announceForAccessibility("Bottom Sheet Closed !slide up with two fingers to open!")
+                            text_title_bottom_sheet.isFocusable = true
+                            text_title_bottom_sheet.importantForAccessibility =
+                                View.IMPORTANT_FOR_ACCESSIBILITY_YES
+                        }
                     }
                     BottomSheetBehavior.STATE_DRAGGING -> {
                     }
@@ -71,9 +82,8 @@ class AccountFragment  : Fragment() {
         })
 
 
-        Tabs(childFragmentManager).setUpTabs(root,Constants().tab_fragments,
+        Tabs(childFragmentManager, bottomSheetBehavior).setUpTabs(root,Constants().tab_fragments,
             resources.getStringArray(R.array.tab_items), Constants().tab_icons)
-
         return root
     }
 

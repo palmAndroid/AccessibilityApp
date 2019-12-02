@@ -14,6 +14,7 @@
         android:contentDescription="@string/glad_u_r_here"
         android:textColor="@color/white"
         android:layout_margin="@dimen/_5dp"
+        android:accessibilityTraversalBefore="@id/text_sub_title_transfer_layout"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -22,9 +23,12 @@
         style="@style/LayoutWrap"
         android:layout_margin="@dimen/_5dp"
         android:text="@string/welcome_back"
+        android:accessibilityTraversalAfter="@id/text_title_transfer_layout"
+        android:focusable="true"
         android:textColor="@color/white"
         android:textSize="@dimen/_22sp"
         android:textStyle="bold"
+
         android:contentDescription="@string/welcome_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_title_transfer_layout"
@@ -40,6 +44,8 @@
         android:layout_margin="@dimen/_5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_sub_title_transfer_layout"
+        android:accessibilityTraversalAfter="@id/text_sub_title_transfer_layout"
+
         />
 
     <View
@@ -59,6 +65,8 @@
         android:layout_margin="@dimen/_5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/line1_transfer_layout"
+        android:accessibilityTraversalAfter="@id/text_1_transfer_layout"
+
         />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -67,6 +75,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_2_transfer_layout"/>
+        app:layout_constraintTop_toBottomOf="@+id/text_2_transfer_layout"
+        android:focusable="true"
+        android:accessibilityTraversalAfter="@id/text_2_transfer_layout"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

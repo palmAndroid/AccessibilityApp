@@ -8,6 +8,9 @@
     android:importantForAccessibility="yes"
     android:focusable="true"
     android:id="@+id/topLL"
+
+    android:accessibilityTraversalAfter="@id/viewpager"
+    android:contentDescription="This is bottom sheet with Title:Insight and Updates ; slide up with two fingers to open!"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
 

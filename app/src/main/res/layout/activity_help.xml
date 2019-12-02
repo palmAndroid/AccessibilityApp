@@ -78,6 +78,7 @@
         android:id="@+id/viewVW"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
+        android:layout_margin="@dimen/_15dp"
         android:background="@color/gray"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/securityTV" />
@@ -116,7 +117,6 @@
         style="@style/TextSmallStyle"
         android:text="@string/how_do_i_send_money_to_a_person"
         android:textColor="@color/blue"
-        android:textSize="@dimen/_12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/requestingTV" />
 

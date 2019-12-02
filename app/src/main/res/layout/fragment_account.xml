@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/LayoutFullScreen">
+    style="@style/LayoutFullScreen"
+    >
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         style="@style/LayoutFullScreen"
@@ -13,9 +14,14 @@
             android:id="@+id/viewpager"
             style="@style/LayoutHeight_Wrap"
             android:layout_above="@+id/tabs"
-            android:background="@color/white" />
+            android:background="@color/white"
+            android:focusable="true"
+            android:accessibilityTraversalBefore="@id/topLL"
+            />
 
-        <include layout="@layout/bottomsheet_layout"></include>
+        <include android:id="@+id/topLL"
+            layout="@layout/bottomsheet_layout"
+            android:accessibilityTraversalAfter="@id/viewpager"></include>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
@@ -32,5 +38,7 @@
         app:tabIndicatorHeight="@dimen/_5dp"
         android:background="@color/white"
         android:layout_alignParentBottom="true"
+        android:focusable="true"
+        android:accessibilityTraversalAfter="@id/topLL"
         />
 </RelativeLayout>
